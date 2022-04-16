@@ -78,7 +78,7 @@
   margin-left: 36px;
 }
 
-.header-item:first-child {
+.header-item-first {
   margin-left: 0;
 }
 
@@ -161,16 +161,16 @@
   display: flex;
   flex-shrink: 2;
 }
-.trend1 {
+.trend-garden {
   background-image: url(../images/trend1.jpg);
 }
-.trend2 {
+.trend-cheese {
   background-image: url(../images/trend2.jpg);
 }
-.trend3 {
+.trend-travel {
   background-image: url(../images/trend3.jpg);
 }
-.trend4 {
+.trend-vitamins {
   background-image: url(../images/trend4.jpg);
 }
 .trend::after {
@@ -214,10 +214,13 @@
   list-style-type: none;
   justify-content: flex-start;
 }
-.trend-teg:nth-child(n + 2) {
-  margin-left: 17px;
-}
 
+.trend-teg{
+  margin-right: 17px;
+}
+.trend-teg-last{
+  margin-right: 0; 
+}
 .trend-teg-link {
   text-decoration: none;
   color: #b59f5b;
@@ -253,7 +256,7 @@
   justify-content: center;
   margin-bottom: 59px;
 }
-.section:last-child {
+.section-last{
   margin-bottom: 0;
 }
 
@@ -273,8 +276,11 @@
   list-style-type: none;
   justify-content: flex-start;
 }
-.tegs-list:nth-child(n + 2) {
+.tegs-list {
   margin-left: 17px;
+}
+.tegs-list-first {
+  margin-left: 0;  
 }
 
 .teg-link {
@@ -320,10 +326,9 @@
 .article {
   font-size: 15px;
   line-height: 1.5;
-  margin-bottom: 10px;
 }
-.article:last-child {
-  margin-bottom: 0;
+.article-last{
+  margin-top: 10px;  
 }
 .aside {
   width: 270px;
@@ -368,7 +373,7 @@
   width: 100%;
   margin-bottom: 12px;
 }
-.news:last-child {
+.news-last {
   margin-bottom: 0;
 }
 .thumb {
@@ -544,7 +549,7 @@
 .teg-item {
   margin-right: 5px;
 }
-.teg-item:last-child {
+.teg-item-last {
   margin-right: 0;
 }
 .teg {
@@ -744,7 +749,7 @@
   margin-right: 25px;
   display: block;
 }
-.socials-item:last-child {
+.socials-item-last {
   margin-right: 0;
 }
 
@@ -895,7 +900,7 @@
     min-height: 245px;
     padding: 15px 20px;
   }
-  .trend:nth-child(n + 3) {
+  .trend-lower {
     margin-top: 5px;
   }
   .trend-title {
@@ -946,13 +951,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    padding: 0 35px;
     max-width: 698px;
+    padding: 0;
   }
   .product {
     width: calc(50% - 15px);
   }
-  .product:nth-child(3) {
+  .product-last {
     margin-top: 25px;
   }
   .product-title {
@@ -1100,7 +1105,7 @@
   .trend-content {
     padding: 30px 20px;
   }
-  .trend:last-child {
+  .trend-vitamins {
     margin-bottom: 0;
   }
   .trend-title {
@@ -1125,6 +1130,9 @@
     margin-bottom: 58px;
     flex: 1 1 auto;
   }
+  .section-last {
+     margin-bottom: 0;
+    }
   .section-image {
     margin: 0;
     width: 100%;
@@ -1154,15 +1162,10 @@
     margin-top: 65px;
     width: 100%;
   }
-  .posts-title-link,
-  .subscribe-link,
-  .tegs-title-link,
-  .themes-title-link {
+  .aside-title {
     font-size: 16px;
   }
-  .search,
-  .email,
-  .tegs-aside {
+  .section-aside {
     margin-bottom: 40px;
   }
   .themes-title::after {
@@ -1192,7 +1195,7 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .product:last-child {
+  .product-last {
     margin-bottom: 0;
   }
 
@@ -1215,7 +1218,7 @@
     min-height: 180px;
     padding: 10px;
   }
-  .trend:nth-child(n + 3) {
+  .trend-lover {
     margin-top: 3px;
   }
   .trend-content {
@@ -1326,7 +1329,7 @@
   height: 1px;
   width: 1px;
 }
-.radio-group:first-child {
+.radio-group-first {
   margin-right: 30px;
 }
 .radio-group-box {
